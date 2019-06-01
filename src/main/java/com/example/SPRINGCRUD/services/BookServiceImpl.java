@@ -22,4 +22,14 @@ public class BookServiceImpl implements BookServices {
     public BookModel createBook(BookModel bookModel) {
         return bookRepository.save(bookModel);
     }
+
+    @Override
+    public BookModel getBook(long id) {
+        return bookRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public BookModel getBookByBookTitle(String bookTitle){
+        return bookRepository.findByBookTitle(bookTitle).orElse(null);
+    }
 }

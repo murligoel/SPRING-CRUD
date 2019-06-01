@@ -19,12 +19,12 @@ public class BookModel{
     private long id;
 
     @NotEmpty
-    private String title;
+    private String bookTitle;
 
     @NotEmpty
-    private String author;
+    private String bookAuthor;
 
     @NotEmpty
-    private String cost;
+    private String bookCost;
 
 }
