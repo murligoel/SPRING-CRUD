@@ -1,5 +1,7 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.controller;
 
+import com.example.SPRINGCRUD.model.BookModel;
+import com.example.SPRINGCRUD.services.BookServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +13,7 @@ import java.util.List;
 
 @RestController
 
-class BookController{
+public class BookController{
 
     @Autowired
     private BookServices bookServices;

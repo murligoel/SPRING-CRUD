@@ -1,4 +1,4 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +12,7 @@ import javax.validation.constraints.NotEmpty;
 @Entity
 @Data
 @NoArgsConstructor
-class BookModel{
+public class BookModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
