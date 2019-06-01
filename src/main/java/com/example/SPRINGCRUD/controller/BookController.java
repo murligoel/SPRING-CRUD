@@ -29,6 +29,11 @@ public class BookController{
         return bookServices.getBookByBookTitle(bookTitle);
     }
 
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    public void deleteBook(@PathVariable long id){
+        bookServices.deleteBook(id);
+    }
+
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public BookModel createBook(@Valid @RequestBody BookModel bookModel){
         System.out.println(bookModel.toString());

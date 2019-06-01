@@ -32,4 +32,9 @@ public class BookServiceImpl implements BookServices {
     public BookModel getBookByBookTitle(String bookTitle){
         return bookRepository.findByBookTitle(bookTitle).orElse(null);
     }
+
+    @Override
+    public void deleteBook(long id) {
+        bookRepository.deleteById(id);
+    }
 }

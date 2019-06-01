@@ -9,4 +9,5 @@ public interface BookServices {
         BookModel createBook(BookModel bookModel);
         BookModel getBook(long id);
         BookModel getBookByBookTitle(String bookTitle);
+        void deleteBook(long id);
 	}
