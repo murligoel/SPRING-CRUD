@@ -12,5 +12,3 @@ deploy:
   app:
     master: sp-basic
 
-install:
-  - bundle install
