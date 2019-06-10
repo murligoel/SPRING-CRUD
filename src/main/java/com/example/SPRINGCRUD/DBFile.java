@@ -1,11 +1,15 @@
 package com.example.SPRINGCRUD;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "files")
+@Data
+@NoArgsConstructor
 public class DBFile {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -18,10 +22,6 @@ public class DBFile {
 
     @Lob
     private byte[] data;
-
-    public DBFile() {
-
-    }
 
     public DBFile(String fileName, String fileType, byte[] data) {
         this.fileName = fileName;
