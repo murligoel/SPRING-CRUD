@@ -1,4 +1,4 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.exception;
 
 public class StorageException extends RuntimeException{
     public StorageException(String message) {

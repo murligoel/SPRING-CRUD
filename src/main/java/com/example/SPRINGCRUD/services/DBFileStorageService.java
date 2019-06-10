@@ -1,8 +1,8 @@
 package com.example.SPRINGCRUD.services;
 
-import com.example.SPRINGCRUD.DBFile;
-import com.example.SPRINGCRUD.MyFileNotFoundException;
-import com.example.SPRINGCRUD.StorageException;
+import com.example.SPRINGCRUD.model.DBFile;
+import com.example.SPRINGCRUD.exception.MyFileNotFoundException;
+import com.example.SPRINGCRUD.exception.StorageException;
 import com.example.SPRINGCRUD.repository.DBFileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

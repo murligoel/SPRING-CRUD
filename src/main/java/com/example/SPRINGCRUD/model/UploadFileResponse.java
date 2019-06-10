@@ -1,4 +1,4 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

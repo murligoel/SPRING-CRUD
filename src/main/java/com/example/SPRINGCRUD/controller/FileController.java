@@ -1,7 +1,7 @@
 package com.example.SPRINGCRUD.controller;
 
-import com.example.SPRINGCRUD.DBFile;
-import com.example.SPRINGCRUD.UploadFileResponse;
+import com.example.SPRINGCRUD.model.DBFile;
+import com.example.SPRINGCRUD.model.UploadFileResponse;
 import com.example.SPRINGCRUD.services.DBFileStorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
@@ -10,15 +10,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 public class FileController {
-
-    private static final Logger logger = LoggerFactory.getLogger(FileController.class);
 
     @Autowired
     DBFileStorageService DBFileStorageService;
