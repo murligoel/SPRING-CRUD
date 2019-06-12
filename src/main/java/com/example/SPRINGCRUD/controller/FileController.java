@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.util.List;
+
+
 @RestController
 public class FileController {
 
@@ -30,6 +33,12 @@ public class FileController {
 
         return new UploadFileResponse(dbFile.getFileName(),fileDownloadUri,
                 file.getContentType(),file.getSize());
+    }
+
+    @GetMapping("/uploadFile")
+    public List<DBFile> viewUploadedFiles(){
+         return DBFileStorageService.getAllFiles();
+
     }
 
     @GetMapping("/downloadFile/{fileId}")
