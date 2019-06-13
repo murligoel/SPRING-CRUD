@@ -1,4 +1,4 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

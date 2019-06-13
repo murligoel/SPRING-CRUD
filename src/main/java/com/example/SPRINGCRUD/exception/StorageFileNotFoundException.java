@@ -1,6 +1,8 @@
-package com.example.SPRINGCRUD;
+package com.example.SPRINGCRUD.exception;
 
-public class StorageFileNotFoundException  extends StorageException  {
+import com.example.SPRINGCRUD.exception.StorageException;
+
+public class StorageFileNotFoundException  extends StorageException {
 
     public StorageFileNotFoundException(String message) {
         super(message);

@@ -1,5 +1,6 @@
 package com.example.SPRINGCRUD;
 
+import com.example.SPRINGCRUD.config.StorageProperties;
 import com.example.SPRINGCRUD.services.StorageService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

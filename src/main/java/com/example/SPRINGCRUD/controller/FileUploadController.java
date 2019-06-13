@@ -3,7 +3,7 @@ package com.example.SPRINGCRUD.controller;
 import java.io.IOException;
 import java.util.stream.Collectors;
 
-import com.example.SPRINGCRUD.StorageFileNotFoundException;
+import com.example.SPRINGCRUD.exception.StorageFileNotFoundException;
 import com.example.SPRINGCRUD.services.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
