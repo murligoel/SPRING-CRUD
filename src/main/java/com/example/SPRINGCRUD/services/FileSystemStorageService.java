@@ -1,8 +1,8 @@
 package com.example.SPRINGCRUD.services;
 
-import com.example.SPRINGCRUD.StorageException;
-import com.example.SPRINGCRUD.StorageFileNotFoundException;
-import com.example.SPRINGCRUD.StorageProperties;
+import com.example.SPRINGCRUD.exception.StorageException;
+import com.example.SPRINGCRUD.exception.StorageFileNotFoundException;
+import com.example.SPRINGCRUD.config.StorageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
